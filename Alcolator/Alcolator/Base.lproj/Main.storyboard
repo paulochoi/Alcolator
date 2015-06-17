@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ofb-Mg-zP1">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ofb-Mg-zP1">
                                 <rect key="frame" x="244" y="104" width="113" height="45"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
                                 <state key="normal" title="Calculate">
@@ -33,8 +33,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="???" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z41-bD-4Xx">
-                                <rect key="frame" x="279" y="157" width="55" height="23"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z41-bD-4Xx">
+                                <rect key="frame" x="31" y="157" width="538" height="18"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" red="0.27843138579999999" green="0.0" blue="0.81176477670000002" alpha="1" colorSpace="deviceRGB"/>
                                 <nil key="highlightedColor"/>
@@ -49,6 +49,7 @@
                             <constraint firstItem="Ofb-Mg-zP1" firstAttribute="top" secondItem="Yry-42-sNP" secondAttribute="bottom" constant="8" id="A8q-wg-12K"/>
                             <constraint firstItem="iCL-BA-XAc" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="MaA-kI-hAM"/>
                             <constraint firstItem="z41-bD-4Xx" firstAttribute="top" secondItem="Ofb-Mg-zP1" secondAttribute="bottom" constant="8" id="T2T-DL-tSU"/>
+                            <constraint firstItem="Ofb-Mg-zP1" firstAttribute="width" secondItem="z41-bD-4Xx" secondAttribute="width" id="WAD-m7-lx3"/>
                             <constraint firstItem="Yry-42-sNP" firstAttribute="centerX" secondItem="iCL-BA-XAc" secondAttribute="centerX" id="WXk-5C-m1b"/>
                             <constraint firstItem="Yry-42-sNP" firstAttribute="centerX" secondItem="Ofb-Mg-zP1" secondAttribute="centerX" constant="-0.5" id="Ys0-Xv-RD3"/>
                             <constraint firstAttribute="trailingMargin" secondItem="z41-bD-4Xx" secondAttribute="trailing" constant="15" id="eDk-Go-Qtq"/>
