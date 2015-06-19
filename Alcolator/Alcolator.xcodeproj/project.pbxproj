@@ -89,11 +89,11 @@
 			children = (
 				7333035F1B322AE500C81470 /* AppDelegate.h */,
 				733303601B322AE500C81470 /* AppDelegate.m */,
-				733303621B322AE500C81470 /* ViewController.h */,
 				738E49D51B344757001F8FDB /* WhiskeyViewController.h */,
 				73C181091B3464BE0046D06E /* MainMenuViewController.h */,
 				73C1810A1B3464BF0046D06E /* MainMenuViewController.m */,
 				738E49D61B344757001F8FDB /* WhiskeyViewController.m */,
+				733303621B322AE500C81470 /* ViewController.h */,
 				733303631B322AE500C81470 /* ViewController.m */,
 				733303651B322AE500C81470 /* Main.storyboard */,
 				733303681B322AE500C81470 /* Images.xcassets */,

@@ -15,6 +15,7 @@
 
 @implementation ViewController
 
+
 - (IBAction)textFieldDidChange:(UITextField *)sender {
     NSString *enteredText = sender.text;
     float enteredNumber = [enteredText floatValue];
@@ -24,10 +25,19 @@
     }
 }
 
-
 - (IBAction)sliderValueDidChange:(UISlider *)sender {
     NSLog(@"Slider value changed to %f", sender.value);
+    
+    NSString *shot;
+    if ((int) sender.value > 1) {
+        shot = @"shots";
+    } else {
+        shot = @"shot";
+    }
+    
+
     [self.beerPercentTextField resignFirstResponder];
+    self.navigationController.navigationBar.topItem.title = [NSString stringWithFormat:@"%@ (%d %@)", self.title, (int) sender.value, shot];
 }
 
 - (IBAction)buttonPressed:(id)sender {
@@ -73,6 +83,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+}
+
+-(void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
 }
 
 - (void)didReceiveMemoryWarning {

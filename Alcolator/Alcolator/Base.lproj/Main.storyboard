@@ -8,7 +8,7 @@
         <!--Wine-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                <viewController title="Wine" id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -68,7 +68,6 @@
                             <outletCollection property="gestureRecognizers" destination="JvH-WI-of2" appends="YES" id="IjI-nv-713"/>
                         </connections>
                     </view>
-                    <navigationItem key="navigationItem" title="Wine" id="rar-4G-Zdz"/>
                     <connections>
                         <outlet property="beerCountSlider" destination="Yry-42-sNP" id="LlJ-Yd-Jv7"/>
                         <outlet property="beerPercentTextField" destination="iCL-BA-XAc" id="l2j-X5-FPz"/>
@@ -87,7 +86,7 @@
         <!--Whiskey-->
         <scene sceneID="MiK-Ek-03R">
             <objects>
-                <viewController id="BcF-gy-uXp" customClass="WhiskeyViewController" sceneMemberID="viewController">
+                <viewController title="Whiskey" id="BcF-gy-uXp" customClass="WhiskeyViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="K9x-a7-W9q"/>
                         <viewControllerLayoutGuide type="bottom" id="afK-If-6tJ"/>
@@ -144,7 +143,6 @@
                             <constraint firstItem="4dg-ne-y8f" firstAttribute="centerX" secondItem="zG2-ba-eAJ" secondAttribute="centerX" id="yAY-HC-2F9"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Whiskey" id="odI-3c-VxB"/>
                     <connections>
                         <outlet property="beerCountSlider" destination="4dg-ne-y8f" id="qTA-Db-gl9"/>
                         <outlet property="beerPercentTextField" destination="zG2-ba-eAJ" id="yWa-uV-oLJ"/>
