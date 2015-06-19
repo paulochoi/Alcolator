@@ -28,7 +28,6 @@
 - (IBAction)sliderValueDidChange:(UISlider *)sender {
     NSLog(@"Slider value changed to %f", sender.value);
     [self.beerPercentTextField resignFirstResponder];
-    [self.tabBarItem setBadgeValue:[NSString stringWithFormat:@"%d", (int) sender.value]];
 }
 
 - (IBAction)buttonPressed:(id)sender {
@@ -44,6 +43,8 @@
     float alcoholPercentageOfWine = 0.13;
     float ouncesOfAlcoholPerWineGlass = ouncesInOneGlassWine * alcoholPercentageOfWine;
     float numberOfWineGlassesForEquivalentAlcoholAmount = ouncesOfAlcoholTotal / ouncesOfAlcoholPerWineGlass;
+    
+    _result = numberOfWineGlassesForEquivalentAlcoholAmount;
     
     NSString *beerText;
     
@@ -63,6 +64,8 @@
     
     NSString *resultText = [NSString stringWithFormat:NSLocalizedString(@"%d %@ (with %.2f%% alcohol) contains as much alcohol as %.1f %@ of wine.", nil), numberOfBeers, beerText,  [self.beerPercentTextField.text floatValue], numberOfWineGlassesForEquivalentAlcoholAmount, wineText];
     self.resultLabel.text = resultText;
+    [self.tabBarItem setBadgeValue:[NSString stringWithFormat:@"%.1f", _result]];
+
     
 }
 
